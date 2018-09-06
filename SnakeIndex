@@ -1,0 +1,26 @@
+configfile: "config.yaml"
+
+tc_URL = config["refs"]["transcriptome_URL"]
+
+
+rule all:
+    input:
+        "transcripts_index/hash.bin"
+    message:
+        "Job well done!"
+
+rule get_transcriptome_fasta:
+    output:
+        "transcripts.fasta"
+    shell:
+        "wget -O {output} {tc_URL}"
+
+rule index:
+    input:
+        "transcripts.fasta"
+    output:
+        "transcripts_index/hash.bin"
+    params:
+        "transcripts_index"
+    shell:
+        "salmon index -t {input} -i {params} --type quasi -k 31"
