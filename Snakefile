@@ -38,7 +38,7 @@ rule index:
 # create count tables for each of the samples (quant.sf)
 rule salmon_quant:
     input:
-        Ai   = directory("transcripts_index"),
+        Ai   = "transcripts_index",
         r1   = R1,
         r2   = R2,
         extr = "transcripts_index/hash.bin"
