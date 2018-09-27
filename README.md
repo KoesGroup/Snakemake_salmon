@@ -1,5 +1,5 @@
 # RNA_seq_Snakemake
-A snakemake pipeline for a quick analysis of RNA-seq data using salmon
+A snakemake pipeline for a quick analysis of RNA-seq data using [salmon](https://combine-lab.github.io/salmon/)
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.2.0-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Miniconda](https://img.shields.io/badge/miniconda-blue.svg)](https://conda.io/miniconda)
