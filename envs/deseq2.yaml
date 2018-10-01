@@ -19,10 +19,9 @@ dependencies:
   - bioconductor-iranges =2.12.0
   - bioconductor-s4vectors =0.16.0
   - bioconductor-summarizedexperiment =1.8.0
-  - bioconductor-tximport =1.6.0
+  - bioconductor-tximport =1.8.0
   - bioconductor-xvector =0.18.0
   - bioconductor-zlibbioc =1.24.0
-  - biocunductor-tximport =1.8.0
   - r-acepack =1.4.1
   - r-backports =1.0.5
   - r-base64enc =0.1_3
